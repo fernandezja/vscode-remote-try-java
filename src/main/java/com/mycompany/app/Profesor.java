@@ -8,7 +8,7 @@ package com.mycompany.app;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class Alumno 
-      extends Persona {
+public class Profesor 
+            extends Persona {
 
 }
