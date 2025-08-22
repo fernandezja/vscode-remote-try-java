@@ -8,23 +8,7 @@ package com.mycompany.app;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class Profesor 
-            extends Persona {
-
-    private String titulo;
-
-    public String getTitulo(){
-        return this.titulo;
-    }
-
-    public void setTitulo(String valor){
-         this.titulo = valor;
-    }
-
-    @Override
-    public String asistencia() {
-        
-        return String.format("Ir al campus a marcar (%s)", super.asistencia());
-    }
+public class Administrativo 
+      extends Persona {
 
 }

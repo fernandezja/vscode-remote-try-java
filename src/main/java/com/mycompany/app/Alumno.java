@@ -11,4 +11,8 @@ import java.time.Period;
 public class Alumno 
       extends Persona {
 
+   @Override
+   public String asistencia() {
+       return "Decir presente al profesor";
+   }
 }

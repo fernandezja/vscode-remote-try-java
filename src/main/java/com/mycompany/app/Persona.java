@@ -41,4 +41,10 @@ public class Persona {
                            LocalDate.now()).getYears();
    }
 
+   
+   public String asistencia() {
+      return "Asistencia registrada general";
+      //return "Ir al campus a marcar";
+   }
+
 }
