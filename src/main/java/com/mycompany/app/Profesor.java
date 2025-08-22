@@ -9,7 +9,8 @@ import java.time.LocalDate;
 import java.time.Period;
 
 public class Profesor 
-            extends Persona {
+            extends Persona
+            implements IDarClase {
 
     private String titulo;
 
@@ -23,8 +24,13 @@ public class Profesor
 
     @Override
     public String asistencia() {
-        
+
         return String.format("Ir al campus a marcar (%s)", super.asistencia());
     }
+
+    public String darClase() {
+        return "El profesor esta dando clase";
+    }
+    
 
 }

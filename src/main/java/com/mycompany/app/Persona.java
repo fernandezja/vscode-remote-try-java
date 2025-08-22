@@ -8,7 +8,9 @@ package com.mycompany.app;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class Persona {
+public class Persona 
+      implements IRegistrarAsistencia
+   {
 
    private String nombre;
 
