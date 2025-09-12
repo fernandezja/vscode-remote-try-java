@@ -8,9 +8,19 @@ package com.mycompany.app;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class Persona 
+public abstract class Persona 
       implements IRegistrarAsistencia
    {
+
+    public Persona(String nombre) {
+    
+        if (nombre == "") {
+            throw new RuntimeException("No se permite nombre vacio");
+        }
+
+       //this.nombre = nombre
+       this.setNombre(nombre);
+   }
 
    private String nombre;
 
@@ -47,6 +57,10 @@ public class Persona
    public String asistencia() {
       return "Asistencia registrada general";
       //return "Ir al campus a marcar";
+   }
+
+   public String formatear(String valor){
+      return String.format("%s [FORMATEADO]", valor);   
    }
 
 }

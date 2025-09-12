@@ -21,7 +21,7 @@ public class AlumnoTest {
     public void debeTenerNombreParadigmas2() {
        
         Alumno a1;
-        a1 = new Alumno();
+        a1 = new Alumno("Alumnos 1");
         a1.setNombre("Paradigmas 2");
         String nombre = a1.getNombre();
 
@@ -50,7 +50,7 @@ public class AlumnoTest {
     public void debeCalcularLaEdad25() {
        
         Alumno a1;
-        a1 = new Alumno();
+        a1 = new Alumno("Nombre 1");
         
         a1.setFechaNacimiento(this.getFecha20000101());
        
@@ -65,12 +65,12 @@ public class AlumnoTest {
     public void debeCalcularLaEdad24_v1() {
        
         Alumno a1;
-        a1 = new Alumno();
+        a1 = new Alumno("Nombre 1");
         
         a1.setFechaNacimiento(this.getFecha20000911());
        
         assertEquals("Error edad incorrecto", 
-                    24,
+                    25,
                      a1.edad());
 
     }
@@ -80,7 +80,7 @@ public class AlumnoTest {
     public void debeCalcularLaEdad24_v2() {
        
         Alumno a1;
-        a1 = new Alumno();
+        a1 = new Alumno("Nombre 1");
         
         a1.setFechaNacimiento(this.getFecha20010101());
        

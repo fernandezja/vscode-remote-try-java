@@ -11,4 +11,8 @@ import java.time.Period;
 public class Administrativo 
       extends Persona {
 
+      
+      public Administrativo(String nombre) {
+            super(nombre);
+      }
 }

@@ -9,9 +9,9 @@ public class PooPolimorfismoTest {
     @Test
     public void polimorfismoTest1() {
 
-        Profesor profesor1 = new Profesor();
-        Alumno alumno1 = new Alumno();
-        Administrativo administrativo1 = new Administrativo();
+        Profesor profesor1 = new Profesor("Profesor 1");
+        Alumno alumno1 = new Alumno("Nombre 1");
+        Administrativo administrativo1 = new Administrativo("Admin 1");
 
         assertEquals("Asistencia del profesor",
                 "Ir al campus a marcar (Asistencia registrada general)",

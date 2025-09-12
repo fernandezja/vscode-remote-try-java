@@ -5,11 +5,14 @@
 
 package com.mycompany.app;
 
-import java.time.LocalDate;
-import java.time.Period;
 
 public class Alumno 
       extends Persona {
+
+
+   public Alumno(String nombre) {
+         super(nombre);
+   }
 
    @Override
    public String asistencia() {

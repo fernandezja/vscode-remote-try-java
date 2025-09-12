@@ -9,7 +9,7 @@ public class PooInterfacesTest {
     @Test
     public void interfaceTest1() {
 
-        Profesor profesor1 = new Profesor();
+        Profesor profesor1 = new Profesor("Profesor 1");
         
         assertEquals("DEbe dar clases",
                 "El profesor esta dando clase",
@@ -23,7 +23,7 @@ public class PooInterfacesTest {
 
         AsistenciaManager am1 = new AsistenciaManager();
 
-         Profesor profesor1 = new Profesor();
+         Profesor profesor1 = new Profesor("Profesor 1");
         am1.tomarAsistencia(profesor1);
         
         assertEquals("DEbe tomas asistencia",
@@ -38,7 +38,7 @@ public class PooInterfacesTest {
 
         AsistenciaManager am1 = new AsistenciaManager();
 
-         Alumno alumno1 = new Alumno();
+         Alumno alumno1 = new Alumno("Nombre 1");
         am1.tomarAsistencia(alumno1);
         
         assertEquals("DEbe tomas asistencia",

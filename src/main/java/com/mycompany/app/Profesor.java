@@ -12,6 +12,11 @@ public class Profesor
             extends Persona
             implements IDarClase {
 
+                
+   public Profesor(String nombre) {
+         super(nombre);
+   }
+
     private String titulo;
 
     public String getTitulo(){

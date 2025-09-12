@@ -11,10 +11,10 @@ public class CaracteristicasPOO {
     @Test
     public void comportamientoTest() {
 
-        Profesor profesor1 = new Profesor();
+        Profesor profesor1 = new Profesor("Profesor 1");
         profesor1.setNombre("Profe A");
         
-        Profesor profesor2 = new Profesor();
+        Profesor profesor2 = new Profesor("Profesor 1");
         profesor2.setNombre("Profe A");
 
         profesor1.setTitulo("Titulo del profesor A");

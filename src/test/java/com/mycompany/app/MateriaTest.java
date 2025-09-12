@@ -15,7 +15,7 @@ public class MateriaTest {
     public void debeAgregarUnAlumno() {
 
         Materia m1 = new Materia();
-        Alumno a1 = new Alumno();
+        Alumno a1 = new Alumno("Nombre 1");
 
         m1.agregar(a1);
 
@@ -33,7 +33,7 @@ public class MateriaTest {
         Materia m1 = new Materia();
        
         for (int i = 1; i <= 30; i++) {
-             Alumno a1 = new Alumno();
+             Alumno a1 = new Alumno("Nombre 1");
              m1.agregar(a1);
         }
 

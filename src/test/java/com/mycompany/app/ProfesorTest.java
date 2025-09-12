@@ -17,7 +17,7 @@ public class ProfesorTest {
     public void debeTenerNombre() {
        
         Profesor p1;
-        p1 = new Profesor();
+        p1 = new Profesor("Profesor 1");
         p1.setNombre("Profesor A");
         String nombre = p1.getNombre();
 
