@@ -20,6 +20,8 @@ public abstract class Persona
 
        //this.nombre = nombre
        this.setNombre(nombre);
+
+       this.setFechaNacimiento(new FechaPersonalizada());
    }
 
    private String nombre;
@@ -33,13 +35,17 @@ public abstract class Persona
    }
 
    
-   private LocalDate fechaNacimiento;
+   private FechaPersonalizada fechaNacimiento;
 
-   public void setFechaNacimiento(LocalDate valor) {
+   public void setFechaNacimiento(FechaPersonalizada valor) {
       this.fechaNacimiento = valor;
    }
 
-   public LocalDate getFechaNacimiento() {
+   public void setFechaNacimiento(LocalDate valor) {
+      this.getFechaNacimiento().setFechaInterna(valor);
+   }
+
+   public FechaPersonalizada getFechaNacimiento() {
       return this.fechaNacimiento;
    }
 
@@ -49,7 +55,7 @@ public abstract class Persona
       //return year - this.getFechaNacimiento().getYear();
 
       //option 2
-      return Period.between(this.getFechaNacimiento(), 
+      return Period.between(this.getFechaNacimiento().getFechaInterna(), 
                            LocalDate.now()).getYears();
    }
 

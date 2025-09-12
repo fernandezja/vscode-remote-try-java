@@ -14,5 +14,7 @@ public class Administrativo
       
       public Administrativo(String nombre) {
             super(nombre);
+            
+            
       }
 }
