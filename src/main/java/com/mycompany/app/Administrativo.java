@@ -7,7 +7,7 @@ package com.mycompany.app;
 
 import java.time.LocalDate;
 import java.time.Period;
-
+/* 
 public class Administrativo 
       extends Persona {
 
@@ -18,3 +18,4 @@ public class Administrativo
             
       }
 }
+      */

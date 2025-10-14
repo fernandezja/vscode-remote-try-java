@@ -8,8 +8,11 @@ package com.mycompany.app;
 import java.time.LocalDate;
 import java.time.Period;
 
+import com.mycompany.app.Interfaces.INombrable;
+
 public abstract class Persona 
-      implements IRegistrarAsistencia
+      implements IRegistrarAsistencia,
+                 INombrable
    {
 
     public Persona(String nombre) {

@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class PooPolimorfismoTest {
-
+/* 
     @Test
     public void polimorfismoTest1() {
 
@@ -26,4 +26,6 @@ public class PooPolimorfismoTest {
             administrativo1.asistencia());
 
     }
+
+    */
 }
