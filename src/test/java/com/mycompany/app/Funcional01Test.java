@@ -64,17 +64,37 @@ public class Funcional01Test {
         Materia m1 = generarMateriaConAlumnos(2);
 
 
-        Alumno alumno1 = 
-           m1.getAlumnos().stream()
+       int cantidadAlumnosMayores = 
+            (int) m1.getAlumnos().stream()
+                //.filter(esMayorOIgualA(18))
                 .filter(esMayorDeEdad())
-                .findFirst()
-                .get();
+                .count();
 
 
-         org.junit.Assert.assertEquals("Alumno nombre incorrecto", 
-                    "Nombre 2",
-                    alumno1.getNombre());
+         org.junit.Assert.assertEquals("Error cantidad incorrecto", 
+                    15,
+                    cantidadAlumnosMayores);
     }
+
+
+     @Test
+    public void debeBuscarAlumnosConNombreQueContenga5() {
+
+        Materia m1 = generarMateriaConAlumnos(30);
+
+
+         int cantidad = 
+            (int) m1.getAlumnos().stream()
+                .filter(a -> a.getNombre().contains("5"))
+                .count();
+
+
+         org.junit.Assert.assertEquals("Error cantidad incorrecto", 
+                    3,
+                    cantidad);
+    }
+
+
 
     private Predicate<Alumno> esMayorDeEdad() {
         return esMayorOIgualA(18);
